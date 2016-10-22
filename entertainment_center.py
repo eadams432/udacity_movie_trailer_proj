@@ -1,5 +1,6 @@
 import media,fresh_tomatoes
 
+#Create Movie objects
 toy_story = media.Movie("Toy Story",
                         "A toy story",
                         "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
@@ -22,6 +23,8 @@ bridesmaids = media.Movie("Bridesmaids"
                           ,"https://www.youtube.com/watch?v=FNppLrmdyug")
 
 
+#Add Movie objects to list
 movie_list = [toy_story,her,fantastic_mr_fox,bridesmaids]
 
+#Generate html file using the list of movies, and open in browser
 fresh_tomatoes.open_movies_page(movie_list)
